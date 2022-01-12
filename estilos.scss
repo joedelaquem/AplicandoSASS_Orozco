@@ -1,0 +1,285 @@
+$colorbg: white;
+$shadow: 10px 10px 10px lightgrey;
+$shadow_red: 0px 0px 30px red;
+
+
+header{
+    background-color: $colorbg;
+
+        .header_icono{
+            display: flex;
+            height: 6rem;
+            position: relative;
+            top: 1.5rem;
+            left: 1.5rem;
+        }
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                list-style: none;
+            }
+
+                li{
+                    font-size: 1.5rem;
+                    padding: 20px;
+                }
+
+                        a{
+                            text-decoration: none;
+                            text-align: center;
+                            border-style: solid;
+                            padding: 0.5rem;
+                            border-width: 0.10rem;
+                            border-color: black;
+                            color: black;
+                            box-shadow: $shadow;
+                            transition: box-shadow 0.5s;
+                        }
+
+                            a:hover{
+                                box-shadow: $shadow_red;
+                            }
+
+                            .select_idioma{
+                                display: inline-block;
+                                position: absolute;
+                                top: 3rem;
+                                left: 90%;
+                                height: 2.7rem;
+                                border-radius: 0;
+                                border-style: solid;
+                                border-width: 0.10rem;
+                                border-color: black;
+                                color: black;
+                                box-shadow: $shadow;
+                                font-size: 1rem;
+                                background-color: white;
+                                transition: box-shadow 0.5s;
+                            }   
+
+                            .select_idioma:hover{
+                                box-shadow: $shadow_red;
+                            }
+
+}
+
+
+main{
+    .contenedor_imagen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background-image: url(./Assets/Deathstarbanner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        box-shadow: $shadow;
+        margin-bottom: 150px;
+
+        h1{
+            display: flex;
+            color: white;
+            font-family: serif;
+            font-size: 3.5rem;
+        }
+
+            button{
+                margin-top: 60px;
+                height: 50px;
+                width: 90px;
+                border-radius: 0;
+                border: none;
+                transition: width, box-shadow, 1s;
+            }
+            button:hover{
+                width: 170px;
+                box-shadow: 0px 0px 70px white;
+            }
+    }
+
+    .contenedor_titulo{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 150px;
+
+            h2{
+                margin-bottom: 50px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 4rem;
+            }
+
+                p{
+                    width: 80%;
+                    padding: 1.5rem 0rem 1.5rem 0rem;
+                    font-size: 1.5rem;
+                }
+    }
+
+        
+
+    .contenedor_nota{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+
+        img{
+            height: 250px;
+            border-radius: 2%;
+            box-shadow: $shadow;
+            margin-right: 40px;
+        }
+
+            p{
+                width: 600px;
+                padding: 0 20px 20px 20px;
+                font-size: 1.2rem;
+            }
+
+
+    .contenedor_nota2{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+
+        img{
+            height: 250px;
+            border-radius: 2%;
+            box-shadow: $shadow;
+            margin-right: 40px;
+        }
+
+            p{
+                width: 600px;
+                padding: 0 20px 20px 20px;
+                font-size: 1.2rem;
+            }
+
+
+    .contenedor_nota3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+
+        img{
+            height: 350px;
+            border-radius: 2%;
+            box-shadow: $shadow;
+            margin-right: 40px;
+        }
+
+            p{
+                width: 600px;
+                padding: 0 20px 20px 20px;
+                font-size: 1.2rem;
+            }
+
+}
+
+
+footer{
+    background-color: rgb(63, 63, 63);
+
+    .footer_contenedor{
+        a{
+            img{
+                display: inline-block;
+                height: 6rem;
+                position: relative;
+                top: 1.5rem;
+                left: 1.5rem;
+            }
+        }
+    }
+
+    .footer_contenedor2{
+        display: inline-block;
+        position: relative;
+        left: 30%;
+        bottom: 3rem;
+        font-size: 1.5rem;
+        color: white;
+        
+        a{
+            display: inline-block;
+            position: relative;
+            top: 1rem;
+            text-decoration: none;
+            color: white;
+            transition: color 1s;
+        }
+        a:hover{
+            color: blue;
+        }
+    }
+
+    .contenedor3{
+        display: inline-block;
+        position: relative;
+        bottom: 3rem;
+        left: 50%;
+
+            h4{
+                display: inline-block;
+                position: relative;
+                font-size: 1.5rem;
+                color: white;
+                bottom: 2rem;
+            }
+
+                a{
+                    display: inline-block;
+                    position: relative;
+                    right: 10rem;
+                    top: 1rem;
+
+                        .face{
+                            display: inline-block;
+                            position: relative;
+                            width: 2rem;
+                        }
+                        .insta{
+                            display: inline-block;
+                            position: relative;
+                            width: 2.6rem;
+                            left: 1rem;
+                            top: 0.3rem;
+                        }
+                        .twitter{
+                            display: inline-block;
+                            position: relative;
+                            width: 2rem;
+                            left: 2rem;
+                        }
+                }
+    }
+    h5{
+        display: inline-block;
+        position: relative;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+
+            a{
+                display: inline-block;
+                position: relative;
+                font-size: 1.2rem;
+                color: blue;
+                transition: color 1s;
+            }
+            a:hover{
+                color: red;
+            }
+    }
+}
